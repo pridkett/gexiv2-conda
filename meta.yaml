@@ -1,0 +1,26 @@
+package:
+  name: gexiv2
+  version: "0.10.5"
+
+source:
+  fn: gexiv2-0.10.5.tar.xz
+  url: http://ftp.cse.buffalo.edu/pub/Gnome/sources/gexiv2/0.10/gexiv2-0.10.5.tar.xz
+  sha256: 318fe068cd414c0af91759a87c29fd577cd5d42bf7a6f50caff27535c02ac7f3
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - glib
+    - pkg-config
+    - exiv2
+    - automake
+    - libtool
+  run:
+    - glib
+    - exiv2
+
+about:
+  home: https://wiki.gnome.org/Projects/gexiv2
+  license: GPL2
